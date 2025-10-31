@@ -8,8 +8,7 @@ public class Midpoint {
         for(int i = 0; i < array.length/2; i+=2) {
             array[i] = array[array.length-i];
         }
-        String output = new String(array);
-        return output; 
+        return new String(array); 
     }
 
     @Test

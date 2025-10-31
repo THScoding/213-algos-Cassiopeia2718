@@ -1,0 +1,5 @@
+# Compiled class files
+*.class
+key/
+CSA_starter_code.code-workspace
+.DS_Store
