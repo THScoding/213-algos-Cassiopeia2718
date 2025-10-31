@@ -4,15 +4,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals; // For JUnit 5 asse
 public class Midpoint {
 
     public String substitutions(String test) {
-        String output = "";
-        /*
-         * Put code for your solution here
-         * 
-         * To check your solution: Run Tests
-         *   (After following the steps to Enable Tests shown in the short video here:
-         *      https://code.visualstudio.com/docs/java/java-testing#_enable-testing-and-adding-test-framework-jars-to-your-project
-         *.   )
-         */
+        char[] array = test.toCharArray();
+        for(int i = 0; i < array.length/2; i++) {
+            array[i] = array[array.length-i];
+        }
+        String output = new String(array);
         return output; 
     }
 
