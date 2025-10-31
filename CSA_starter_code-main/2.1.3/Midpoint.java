@@ -5,7 +5,7 @@ public class Midpoint {
 
     public String substitutions(String test) {
         char[] array = test.toCharArray();
-        for(int i = 0; i < array.length/2; i++) {
+        for(int i = 0; i < array.length/2; i+=2) {
             array[i] = array[array.length-i];
         }
         String output = new String(array);
